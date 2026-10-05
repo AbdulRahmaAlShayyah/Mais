@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Mays!</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Canvas Confetti Library for Advanced Explosion Effects -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Animated Lights & Canvas -->
+  <div class="ambient-light"></div>
+  <canvas id="heart-canvas"></canvas>
+
+  <!-- Screen 1: Welcome Overlay with Start Button -->
+  <div id="welcome-screen" class="screen-container active">
+    <div class="welcome-card">
+      <div class="sparkle-icon">✨</div>
+      <h2 class="welcome-subtitle">A Special Surprise Awaits You...</h2>
+      <button id="start-btn" class="glow-btn" onclick="triggerSurprise()">
+        <span>Click Here, Mais 💖</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Screen 2: Celebration Main Screen -->
+  <div id="celebration-screen" class="screen-container">
+    
+    <!-- Exploding Cake Container -->
+    <div class="cake-wrapper" id="cake-container">
+      <div class="cake">
+        <div class="candle">
+          <div class="flame"></div>
+        </div>
+        <div class="top-layer"></div>
+        <div class="middle-layer"></div>
+        <div class="bottom-layer"></div>
+      </div>
+    </div>
+
+    <!-- Floating Final Heart Card -->
+    <div id="final-card" class="final-card-hero">
+      <div class="glowing-heart-icon">💖</div>
+      <h1 class="birthday-title">Happy Birthday To You</h1>
+      <h2 class="person-name">Mais ✨</h2>
+      <p class="uncle-signature">With lots of love from your uncle ❤️</p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
